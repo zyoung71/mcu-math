@@ -1,4 +1,4 @@
-#include <math/Vec3.h>
+#include <math/Vec3.hpp>
 
 #include <cmath>
 

@@ -3,8 +3,7 @@
 #include <cmath>
 #include <numbers>
 
-#include "MathFunctional.h"
-#include "Vec2.h"
+#include "MathFunctional.hpp"
 
 namespace easing
 {

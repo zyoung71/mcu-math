@@ -1,10 +1,10 @@
 #include <pico/stdlib.h>
 #include <stdio.h>
 
-#include <math/Quat.h>
-#include <math/Easing.h>
-#include <math/Vec3.h>
-#include <math/AABB.h>
+#include <math/Quat.hpp>
+#include <math/Easing.hpp>
+#include <math/Vec3.hpp>
+#include <math/AABB.hpp>
 
 consteval Vec2f test()
 {

@@ -1,4 +1,4 @@
-#include <math/AABB.h>
+#include <math/AABB.hpp>
 
 template<typename D>
 constexpr bool AABB<D>::Intersects(const AABB<D>& other) const

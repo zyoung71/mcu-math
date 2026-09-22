@@ -1,4 +1,4 @@
-#include <math/Quat.h>
+#include <math/Quat.hpp>
 
 #include <cmath>
 
