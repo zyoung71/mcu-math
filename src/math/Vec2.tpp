@@ -132,6 +132,15 @@ constexpr Vec2<D>& Vec2<D>::Ceil()
 }
 
 template<typename D>
+constexpr Vec2<D>& Vec2<D>::Swap()
+{
+    D temp = x;
+    x = y;
+    y = temp;
+    return *this;
+}
+
+template<typename D>
 constexpr D Vec2<D>::Min() const
 {
     return std::min(x, y);
@@ -220,4 +229,10 @@ template<typename D>
 constexpr Vec2<D> Vec2<D>::Ceil(const Vec2<D>& v)
 {
     return Vec2<D>{std::ceil(v.x), std::ceil(v.y)};
+}
+
+template<typename D>
+constexpr Vec2<D> Vec2<D>::Swap(const Vec2<D> &v)
+{
+    return Vec2<D>{v.y, v.x};
 }

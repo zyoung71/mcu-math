@@ -41,6 +41,7 @@ struct Vec2
     constexpr Vec2& Round();
     constexpr Vec2& Floor();
     constexpr Vec2& Ceil();
+    constexpr Vec2& Swap();
 
     constexpr D Min() const;
     constexpr D Max() const;
@@ -56,6 +57,7 @@ struct Vec2
     static constexpr Vec2 Round(const Vec2& v);
     static constexpr Vec2 Floor(const Vec2& v);
     static constexpr Vec2 Ceil(const Vec2& v);
+    static constexpr Vec2 Swap(const Vec2& v);
 };
 
 template<typename D>
