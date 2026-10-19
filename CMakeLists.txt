@@ -1,12 +1,12 @@
-if (NOT TARGET pico-math)
+if (NOT TARGET mcu-math)
 
-    add_library(pico-math INTERFACE)
+    add_library(mcu-math INTERFACE)
 
-    target_include_directories(pico-math INTERFACE
+    target_include_directories(mcu-math INTERFACE
         include
     )
 
-    target_include_directories(pico-math INTERFACE
+    target_include_directories(mcu-math INTERFACE
         $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/src> 
     )
 

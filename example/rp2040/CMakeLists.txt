@@ -48,7 +48,7 @@ project(pico-math-impl C CXX ASM)
 
 pico_sdk_init()
 
-add_subdirectory(../ build)
+add_subdirectory(../../ build)
 
 add_executable(${CMAKE_PROJECT_NAME} src/main.cpp)
 
@@ -58,7 +58,7 @@ target_include_directories(${CMAKE_PROJECT_NAME} PUBLIC
 
 target_link_libraries(${CMAKE_PROJECT_NAME}
     pico_stdlib
-    pico-math
+    mcu-math
 )
 
 pico_enable_stdio_usb(${CMAKE_PROJECT_NAME} 1)
